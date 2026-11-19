@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hadir Mejri – Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f6f5fb;--card:#ffffff;--ink:#1d1a33;--soft:#5e5a78;--hero:#2a1b6e;--hero-ink:#ffffff;--accent:#ffb84d;--violet:#6b4de6;--teal:#12a594;--rose:#e0457b;--line:#e2dff0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12102a;--card:#1c1940;--ink:#efedfb;--soft:#aaa6c9;--hero:#231760;--line:#312d63;--violet:#9a84ff;--teal:#35d0bd;--rose:#ff6f9f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12102a;--card:#1c1940;--ink:#efedfb;--soft:#aaa6c9;--hero:#231760;--line:#312d63;--violet:#9a84ff;--teal:#35d0bd;--rose:#ff6f9f;color-scheme:dark}
+html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 "DM Sans",system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:Sora,"Trebuchet MS",sans-serif;margin:0;line-height:1.15}
+header{position:sticky;top:0;z-index:5;background:var(--hero);color:var(--hero-ink);padding:.8rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+header strong{font-family:Sora,sans-serif}
+nav{display:flex;gap:1.3rem;flex-wrap:wrap;font-weight:500}
+nav a{text-decoration:none;opacity:.9}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px}
+.hero{background:var(--hero);color:var(--hero-ink);padding:5rem 1.5rem 6rem;text-align:center}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:38rem;margin:1.3rem auto 0;font-size:1.2rem;opacity:.92}
+.boutons{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+.btn{display:inline-block;padding:.8rem 1.5rem;border-radius:.7rem;font-weight:700;text-decoration:none}
+.btn.plein{background:var(--accent);color:#2a1b6e}
+.btn.vide{border:2px solid rgba(255,255,255,.6);color:#fff}
+main{max-width:66rem;margin:0 auto;padding:0 1.5rem 4rem}
+section{padding-top:3.5rem}
+h2{font-size:1.8rem;font-weight:700;margin-bottom:.4rem}
+.sous{color:var(--soft);margin:0 0 1.6rem}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.3rem}
+.carte{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--violet);border-radius:.9rem;padding:1.4rem}
+.carte.t{border-top-color:var(--teal)}.carte.r{border-top-color:var(--rose)}.carte.a{border-top-color:var(--accent)}
+.carte h3{font-size:1.2rem;margin-bottom:.5rem}
+.carte p{margin:.4rem 0 .9rem;color:var(--soft)}
+.phare{grid-column:1/-1;border-top-width:8px;padding:1.8rem}
+.phare h3{font-size:1.6rem}
+.type{font-size:.9rem;font-weight:700;color:var(--violet);margin-bottom:.3rem}
+.puces{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;list-style:none}
+.puces li{background:var(--bg);border:1px solid var(--line);padding:.1rem .7rem;border-radius:99px;font-size:.88rem;font-weight:500}
+.manque{border:2px dashed var(--rose);border-radius:.6rem;padding:.6rem .9rem;color:var(--soft)}
+.manque b{color:var(--rose)}
+.lien{font-weight:700;color:var(--violet)}
+.contact{background:var(--hero);color:var(--hero-ink);border-radius:1rem;padding:2rem;margin-top:3.5rem}
+.contact h2{margin-bottom:1rem}
+.contact p{margin:.3rem 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<strong>Hadir Mejri</strong>
+<nav aria-label="Sections"><a href="#projets">Projets</a><a href="#domaines">Domaines</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+<h1>Hadir Mejri</h1>
+<p>Étudiante ingénieure en informatique, 3ème année à l’ISIMS de Sfax. Je construis des applications complètes et je cherche un stage de fin d’études (PFE).</p>
+<div class="boutons"><a class="btn plein" href="#projets">Voir mes projets</a><a class="btn vide" href="#contact">Me contacter</a></div>
+</div>
+
+<main>
+<section id="projets">
+<h2>Mes projets</h2>
+<p class="sous">Ce que j’ai conçu et réalisé.</p>
+<div class="grille">
+
+<article class="carte phare">
+<div class="type">Projet de fin d’année (PFA)</div>
+<h3>SIRH : système d’information des ressources humaines</h3>
+<p>Plateforme qui couvre le recrutement et la gestion des carrières : offres d’emploi, candidatures, entretiens, postes, compétences, formations, évaluations et mobilité interne. J’ai tout réalisé seule : un serveur Spring Boot de 20 contrôleurs, une interface Angular 19 et un service d’intelligence artificielle qui extrait les informations des CV, rapproche candidats et offres, aide à la gestion prévisionnelle des emplois et des compétences, et propose un assistant conversationnel.</p>
+<ul class="puces"><li>Spring Boot 3</li><li>JPA</li><li>Angular 19</li><li>Python</li><li>FastAPI</li><li>Traitement du langage naturel</li></ul>
+</article>
+
+<article class="carte t">
+<div class="type">Projet publié</div>
+<h3>Gestion des déchets</h3>
+<p>Application publiée sur GitHub avec une base de qualité professionnelle : 20 tests automatisés, vérification continue avec GitHub Actions, conteneur Docker, documentation d’accueil et licence MIT.</p>
+<ul class="puces"><li>Spring Boot</li><li>Tests</li><li>GitHub Actions</li><li>Docker</li></ul>
+<p><a class="lien" href="https://github.com/Hadir11/gestion-dechets-backend">Voir le code sur GitHub</a></p>
+</article>
+
+<article class="carte r">
+<div class="type">Projet web</div>
+<h3>Gestion des soutenances</h3>
+<p>Serveur Spring Boot pour organiser les soutenances : étudiants, enseignants, jurys, salles, créneaux, disponibilités et notes, avec huit contrôleurs et neuf entités.</p>
+<ul class="puces"><li>Spring Boot 3</li><li>JPA</li><li>Java 17</li><li>Maven</li></ul>
+</article>
+
+</div>
+</section>
+
+<section id="domaines">
+<h2>Autres domaines</h2>
+<p class="sous">Mes réalisations en ERP, en mobile et en objets connectés.</p>
+<div class="grille">
+<article class="carte a">
+<h3>ERP avec Odoo</h3>
+<p>Mise en place d’une entreprise fictive de cosmétiques et de soins beauté, Hadir’s Beauty, sous Odoo 19 : paiements, promotions, stocks, fabrication et rapports, en dinar tunisien.</p>
+<ul class="puces"><li>Odoo 19</li><li>Stocks</li><li>Fabrication</li><li>Rapports</li></ul>
+</article>
+<article class="carte">
+<h3>Développement mobile</h3>
+<p>Applications Android en Kotlin avec Jetpack Compose et Material 3, ainsi qu’une première application en Java et XML, testées sur un vrai téléphone.</p>
+<ul class="puces"><li>Kotlin</li><li>Jetpack Compose</li><li>Material 3</li><li>Android Studio</li></ul>
+</article>
+<article class="carte t">
+<h3>Objets connectés : Smart Doll</h3>
+<p>Conception d’une poupée intelligente qui aide les enfants à apprendre de façon ludique : elle écoute l’enfant, lui pose des questions sur les mathématiques, la lecture ou les sciences, évalue ses réponses et adapte la difficulté à son niveau. Une application permet aux parents de suivre les progrès et de configurer les activités, avec des échanges sécurisés.</p>
+<ul class="puces"><li>Microcontrôleur</li><li>Capteurs et actionneurs</li><li>Reconnaissance vocale</li><li>MQTT ou HTTP</li><li>Apprentissage adaptatif</li></ul>
+<p>Projet en cours, mené en équipe : nous faisons tout ensemble, de l’achat du matériel jusqu’au développement, sans répartition des rôles.</p>
+</article>
+</div>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<p class="sous">Les outils que j’utilise.</p>
+<div class="grille">
+<div class="carte"><h3>Serveur</h3><ul class="puces"><li>Java</li><li>Spring Boot</li><li>JPA</li><li>Spring Security et JWT</li></ul></div>
+<div class="carte t"><h3>Web</h3><ul class="puces"><li>Angular</li><li>Tailwind CSS</li><li>Signals</li></ul></div>
+<div class="carte r"><h3>Intelligence artificielle</h3><ul class="puces"><li>Python</li><li>FastAPI</li><li>Traitement du langage naturel</li></ul></div>
+<div class="carte a"><h3>Mobile</h3><ul class="puces"><li>Kotlin</li><li>Jetpack Compose</li><li>Java et XML</li></ul></div>
+<div class="carte"><h3>Gestion d’entreprise</h3><ul class="puces"><li>Odoo</li></ul></div>
+<div class="carte t"><h3>Outils</h3><ul class="puces"><li>Git et GitHub</li><li>GitHub Actions</li><li>Docker</li><li>JUnit</li></ul></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact</h2>
+<p>Je cherche un stage PFE. Écris-moi !</p>
+<p><a href="mailto:hadirmejri41@gmail.com">hadirmejri41@gmail.com</a></p>
+<p><a href="tel:+21651216770">51 216 770</a></p>
+<p><a href="https://www.linkedin.com/in/hadir-mejri-63297a288/">Mon profil LinkedIn</a> · <a href="https://github.com/Hadir11">Mon profil GitHub</a></p>
+</section>
+</main>
+</body>
+</html>
